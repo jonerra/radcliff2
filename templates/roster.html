@@ -1,0 +1,15 @@
+{% extends 'base.html' %}
+{% block content %}
+<div class="jumbotron">
+    <h1>New York 51s</h1>
+    {% for player in object_list|slice:":10" %}
+    <p>{% if user.is_authenticated %}<a href="{{ player.get_absolute_url }}">{% endif %}{{ player.PlayerFirstName }}  {{ player.PlayerLastName }}</p></a>
+    {% endfor %}
+</div>
+<div class="jumbotron">
+    <h1>Pawtucket Red Sox</h1>
+    {% for player in object_list|slice:"10:20" %}
+    <p>{% if user.is_authenticated %}<a href="{{ player.get_absolute_url }}">{% endif %}{{ player.PlayerFirstName }}  {{ player.PlayerLastName }}</p></a>
+    {% endfor %}
+</div>
+{% endblock %}

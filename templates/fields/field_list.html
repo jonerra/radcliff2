@@ -1,0 +1,14 @@
+{% extends "base.html" %}
+{% load staticfiles %}
+{% block content %}
+<div class="jumbotron">
+    <div class="row">
+        {% for field in object_list %}
+        <div class="col-md-6" id="field">
+            <a href="{{ field.get_absolute_url }}"><img width="275" height="183" src="{% static field.Picture.url  %}"></a>
+            <h3><a href="{{ field.get_absolute_url }}">{{ field.FieldName }}</h3>
+        </div>
+        {% endfor %}
+    </div>
+</div>
+{% endblock %}

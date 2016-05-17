@@ -1,0 +1,69 @@
+body {
+    padding-top: 60px;
+    background: url('http://wallbackhd.com/wp-content/uploads/2016/02/Baseball-Wallpaper.jpg');
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-attachment: fixed;
+}
+
+h2 {
+    text-shadow: 3px 3px 5px #000000;
+}
+
+h1 {
+    text-shadow: 3px 3px 5px #000000;
+}
+
+h3 {
+    text-shadow: 2px 2px 4px #000000;
+}
+
+p {
+    text-shadow: 1px 1px 4px #000000;
+}
+
+.row {
+    padding-left: 60px;
+}
+
+.carousel-caption {
+    text-align: justify;
+    color: #d3d3d3;
+}
+
+.page-header {
+    margin-top: 10px;
+    margin-bottom: -0.5px;
+}
+
+.col-md-6 {
+    padding-right: 80px;
+    text-align: center;
+}
+
+.panel {
+    padding-left: 52px;
+}
+
+.navbar .navbar-nav {
+  display: inline-block;
+  float: none;
+  vertical-align: top;
+  margin: 0 auto;
+}
+
+.navbar .navbar-collapse {
+  text-align: center;
+}
+
+.right {
+    float: right;
+    padding-right: 50px;
+    text-align: right;
+}
+
+.center {
+    float: right;
+    padding-right: 650px;
+    margin: 0px;
+}

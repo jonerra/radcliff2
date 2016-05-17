@@ -1,0 +1,103 @@
+{% extends 'base.html' %}
+{% block content %}
+<div class="jumbotron">
+    <h2 align="center" style="padding-bottom:20px">League Updates</h2>
+    {% for update in update_list %}
+    <div class="panel">
+        <h3>{{ update.description }}</h3>
+        <p>Posted by {{ update.user.username }} on {{ update.created_at }}</p>
+    </div>
+    {% endfor %}
+</div>
+<h1 align="center" style="padding-bottom:20px">Radcliff Board Information</h1>
+<div class="panel panel-default">
+    <div class="panel-body">
+        <div class="row">
+            <div class="col-md-4" align="left" id="test">
+                <h3>Rob Manfred</h3>
+            </div>
+            <div class="col-md-4">
+                <h3>League Commissioner</h3>
+            </div>
+            <div class="col-md-4" align="right">
+                <h3>631-767-5002</h3>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="panel panel-default">
+    <div class="panel-body">
+        <div class="row">
+            <div class="col-md-4" align="left" id="test">
+                <h3>Justin Ford</h3>
+            </div>
+            <div class="col-md-4">
+                <h3>Director of Umpires</h3>
+            </div>
+            <div class="col-md-4" align="right">
+                <h3>631-210-3236</h3>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="panel panel-default">
+    <div class="panel-body">
+        <div class="row">
+            <div class="col-md-4" align="left" id="test">
+                <h3>Joe Torre</h3>
+            </div>
+            <div class="col-md-4">
+                <h3>Director of Coaches</h3>
+            </div>
+            <div class="col-md-4" align="right">
+                <h3>631-219-8654</h3>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="panel panel-default">
+    <div class="panel-body">
+        <div class="row">
+            <div class="col-md-4" align="left" id="test">
+                <h3>John Farrell</h3>
+            </div>
+            <div class="col-md-4">
+                <h3>Head Coach, Red Sox</h3>
+            </div>
+            <div class="col-md-4" align="right">
+                <h3>631-318-5622</h3>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="panel panel-default">
+    <div class="panel-body">
+        <div class="row">
+            <div class="col-md-4" align="left" id="test">
+                <h3>Terry Collins</h3>
+            </div>
+            <div class="col-md-4">
+                <h3>Head Coach, Area 51s</h3>
+            </div>
+            <div class="col-md-4" align="right">
+                <h3>631-568-4538</h3>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="panel panel-default">
+    <div class="panel-body">
+        <div class="row">
+            <div class="col-md-4" align="left" id="test">
+                <h3>Justin Fenway</h3>
+            </div>
+            <div class="col-md-4">
+                <h3>Field Supervisor</h3>
+            </div>
+            <div class="col-md-4" align="right">
+                <h3>631-227-5579</h3>
+            </div>
+        </div>
+    </div>
+</div>
+{% endblock %}

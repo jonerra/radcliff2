@@ -1,0 +1,35 @@
+{% extends 'base.html' %}
+{% block content %}
+<div class="jumbotron">
+    <h1 align="center" style="padding-bottom:30px; padding-left:20px">{{ player.PlayerFirstName }} {{ player.PlayerLastName }}</h1>
+    <div class="row">
+        <div class="col-md-6" style="padding-left:265px">
+            <p align="left">Guardian:</p>
+            <p align="left">Date Of Birth:</p>
+            <p align="left">Address:</p>
+            <p align="left">City:</p>
+            <p align="left">State:</p>
+            <p align="left">Zip Code:</p>
+            <p align="left">Phone Number:</p>
+        </div>
+        <div class="col-md-6" style="padding-right:265px">
+            <p align="left">{{ player.GuardianFirstName }} {{ player.GuardianLastName }}</p>
+            <p align="left">{{ player.DateOfBirth }}</p>
+            <p align="left">{{ player.Street }}</p>
+            <p align="left">{{ player.City }}</p>
+            <p align="left">{{ player.State}}</p>
+            <p align="left">{{ player.Zipcode }}</p>
+            <p align="left">{{ player.PhoneNumber }}</p>
+        </div>
+    </div>
+    <!--
+    <h1 align="center">{{ player.PlayerFirstName }} {{ player.PlayerLastName }}</h1>
+    <p>Guardian: <span class="center">{{ player.GuardianFirstName }} {{ player.GuardianLastName }}</p>
+    <p>Date Of Birth: <span class="center">{{ player.DateOfBirth }}</p>
+    <p>Address: <span class="center">{{ player.Street }}</p>
+    <p>City: <span class="center">{{ player.City }}</p>
+    <p>State: <span class="center">{{ player.State}}</p>
+    <p>Zip Code: <span class="center">{{ player.Zipcode }}</p>
+    <p>Phone Number: <span class="center">{{ player.PhoneNumber }}</p> -->
+</div>
+{% endblock %}

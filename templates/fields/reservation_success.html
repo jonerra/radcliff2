@@ -1,0 +1,9 @@
+{% extends 'base.html' %}
+{% block content %}
+<div class="jumbotron">
+    <div class="alert alert-success">
+        <p>Your field has been reserved! Click <a href="{% url 'home' %}">here</a> to return to the home page!</p>
+        <p>Message sent on {% now "F jS Y" %} at {% now "H:i:s" %} </p>
+    </div>
+</div>
+{% endblock %}
